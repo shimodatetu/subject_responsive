@@ -1,0 +1,86 @@
+/* ブラウザがそれぞれ持っているCSSをリセットするための記述 */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: #6c6b6b;
+}
+
+a {
+  text-decoration: none;
+}
+
+
+
+header {
+  width: 100%;
+  height:50px;
+  background-color: #FF9A4B;
+}
+
+main {
+  width: 960px;
+  display: flex;
+  justify-content: center; 
+  margin: 50px auto;
+}
+
+.step-item{
+  width:300px;
+  position:relative;
+  background-color: #EEEEEE;
+  margin-right: 30px;
+  padding: 10px;
+}
+@media screen and (max-width: 768px) {
+  main{
+    display:block;
+    width:100%;
+  }
+  .step-item{
+    width:90%;
+    margin-left:5%;
+  }
+  .step-item:nth-child(1) {
+    margin-bottom:20px;
+  }
+  .step-item:nth-child(2) {
+    margin-bottom:20px;
+  }
+}
+
+.step-image{
+    height: 150px;
+    background-position: bottom;
+    background-size: cover;
+}
+
+.step-image1{
+    background-image: url(img/flow01.png);
+}
+.step-image2{
+    background-image: url(img/flow02.png);
+}
+.step-image3{
+    background-image: url(img/flow03.png);
+}
+.step-num {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: #FF9A4B;
+  color: #FFFFFF;
+}
+
+.step-title{
+    margin-top:15px;
+    margin-bottom:5px;
+}
+
+
+
+footer {
+  width: 100%;
+  height: 50px;
+  background-color: #AAAAAA;
+}
